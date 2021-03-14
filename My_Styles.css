@@ -1,28 +1,83 @@
 @charset "utf-8";
-
-@media screen{
-.center {
+body {
+    font-family: alegreya, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.625;
+    background-color: #f4f4f4;
+}
+.header-container {
+    background-size: cover;
+    background-position: center center;
+    color: #FFFFFF;
+    padding-bottom: 10vw;
+    background-image:  url("");
+    text-align: center;
+}
+.header-container .site-header {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-transform: uppercase;
+}
+.main-navigation   {
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    font-family: sans-serif;
+}
+.main-navigation ul {
+    margin: 0;
+}
+.main-navigation ul li {
+    display: inline-block;
+}
+.main-navigation ul li a {
+    padding: 17px 37px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+.main-navigation ul li a:hover {
+    text-decoration: underline;
 }
 
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body{
-	background: yellow;
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('ten.jpg');
+  min-height: 100%;
 }
 
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-   
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
