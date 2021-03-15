@@ -1,49 +1,12 @@
 @charset "utf-8";
-body {
-    font-family: alegreya, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0;
-    line-height: 1.625;
-    background-color: #f4f4f4;
-}
-.header-container {
-    background-size: cover;
-    background-position: center center;
-    color: #FFFFFF;
-    padding-bottom: 10vw;
-    background-image:  url("");
-    text-align: center;
-}
-.header-container .site-header {
-    padding: 20px 0;
-    margin: 0 auto;
-    max-width: 1200px;
-    text-transform: uppercase;
-}
-.main-navigation   {
-    font-size: 16px;
-    font-weight: 400;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    font-family: sans-serif;
-}
-.main-navigation ul {
-    margin: 0;
-}
-.main-navigation ul li {
-    display: inline-block;
-}
-.main-navigation ul li a {
-    padding: 17px 37px;
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-}
-.main-navigation ul li a:hover {
-    text-decoration: underline;
-}
 
 
+.body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -55,7 +18,7 @@ body {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('ten.jpg');
+  background-image: url('turtle 3.jpg');
   min-height: 100%;
 }
 
