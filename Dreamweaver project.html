@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+
+	
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Green Sea Turtles</title>
@@ -8,23 +10,46 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="My_Styles.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 	
-<nav>
+
 	<!-- Navbar (sit on top) -->
+<nav>
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
-    </a>
-	  
-
-
-	  
+    </a>  
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-	  
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> ABOUT</a>
-	  
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> CONTACT</a>
   </div>
@@ -43,32 +68,27 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small"></span> Green Sea Turtles</span>
-	 
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small"></span> Green Sea Turtles</span> 
   </div>
 </div>
-
-	
-	
 	
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-
   <h2 class="w3-center">What are green sea turtles?</h2>
- 
   <p>The green turtle is one of the largest sea turtles and the only herbivore among the different species. Green turtles are in fact named for the greenish color of their cartilage and fat, not their shells. In the Eastern Pacific, a group of green turtles that have darker shells are called black turtles by the local community. Green turtles are found mainly in tropical and subtropical waters. Like other sea turtles, they migrate long distances between feeding grounds and the beaches from where they hatched. Classified as endangered, green turtles are threatened by overharvesting of their eggs, hunting of adults, being caught in fishing gear and loss of nesting beach sites.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <img src="turtle plastic.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <div class="w3-col m6  w3-padding-large">
 		<h3>Why are they endangered?</h3>
       <p>The primary threats facing green turtles are bycatch in commercial and recreational fishing gear, direct killing of turtles and harvest of eggs, vessel strikes, loss and alteration of nesting habitat, degradation and loss of foraging habitat, and entanglement in or ingestion of marine debris.</p>
     </div>
   </div>
+	
   <p class="w3-large w3-center w3-padding-16">Facts about Green Sea Turtles </p>
+	<hr>
   <p class="w3-wide">Lifespan</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80 Years</div>
@@ -185,7 +205,6 @@
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ac98926@avcol.school.nz<br>
       </div>
       <p class="w3-center">Fill in the box to send the message:</p>
-      <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -198,7 +217,6 @@
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form>
     </div>
   </div>
 </div>

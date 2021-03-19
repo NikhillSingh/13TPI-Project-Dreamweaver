@@ -5,9 +5,7 @@ body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
-  scroll-behavior: smooth;
 }
-
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -45,5 +43,3 @@ body, html {
     min-height: 400px;
   }
 }
-
-
